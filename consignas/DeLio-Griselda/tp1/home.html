@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jordan´s</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilotp1.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/js/bootstrap.js">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <main>
+        <!--navbar-->
+        <header>
+            <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+                <a href="#" class="navbar-brand"><img class="logo" src="../../DeLio-Griselda/tp1/img/Logo.jpeg"></a></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+                    <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse ml-5" id="navLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="trabajopractico1.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicio.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Checkout.html">Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Jordan´s"
+                            aria-label="Search">
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <!--carousel-->
+            <section>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../DeLio-Griselda/tp1/img/sea-418742_640.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../DeLio-Griselda/tp1/img/puentegri.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../DeLio-Griselda/tp1/img/praga.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+            <!--Serch Form-->
+            <section class="bg-dark">
+                <div class="container text-center">
+                    <div class="btn-group btn-group-lg mt-4 row" data-toggle="collapse" role="group"
+                        aria-label="Basic example">
+                        <button type="button" class="btn btn-success">Paquetes</button>
+                        <button type="button" class="btn btn-success">Hotel</button>
+                        <button type="button" class="btn btn-success">Vuelos</button>
+                    </div>
+                </div>
+                <div class="p-3 container">
+                    <div class="col-12">
+                        <form class="ml-3">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-10 col-md-10 mb-3">
+                                    <!--origen-->
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Origen"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <!--destino-->
+                                <div class="col-xl-6 col-lg-10 col-md-10 mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Destino"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--check in-->
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-5 col-md-5 input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Check in" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!--check out-->
+                                <div class="col-xl-3 col-lg-5 col-md-5 input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Check out"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!--pasajeros-->
+                                <div class="col-xl-6 col-lg-10 col-md-10">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="2 Adultos 0 Niños"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row text-center">
+                                <div class="col-12 mt-3 ">
+                                    <button type="submit" class="btn btn-success mt-2">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="box1">
+                <!--Tu agencia de Confianza-->
+                <div class="somos container">
+                    <h1 class="big">Quiénes Somos</h1>
+                    <p class="mb-4 big1 container">
+                        Jordan´s Travel es una agencia de viajes de aventura que pone a tu alcance conocer otros
+                        países, destinos exóticos y culturas de una manera muy diferente.
+                        Ofrecemos experiencias de aventura auténticas en destinos internacionales.
+                    </p>
+                </div>
+            </section>
+            <!--Tu Proximo Destino-->
+            <section class="bg-dark">
+                <div class="text-center container">
+                    <div class="Iam">
+                        <p class="text-light">Descubri tu próxima</p>
+                        <b>
+                            <div class="innerIam">
+                                Aventura<br />
+                                Experiencia<br />
+                                Cultura
+                            </div>
+                        </b>
+                    </div>
+                    <!--Cards paquetes-->
+                    <div class="row row-cols-1 row-cols-md-3 mt-5 container-fluid">
+                        <div class="col mb-4">
+                            <div class="card cardborder contenedor">
+                                <img src="../../DeLio-Griselda/tp1/img/lighthouse-1872998_640.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#">Islandia</a>
+                                    </h4>
+                                    <p class="card-text">
+                                        <h6>Septiembre - 5 Noches</h6>
+                                        "Hotel + Traslados In - Out"
+                                    </p>
+                                    <hr>
+                                    <p>A partir de <b>$55.800</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card cardborder contenedor">
+                                <img src="../../DeLio-Griselda/tp1/img/turquia.jpg" class="card-img-top" alt="...">
+                                <div class="promo text-right">
+                                    <button type="button" class="btn text-light bg-warning"><b> Con
+                                            excursión</b></button>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="#">Turquía</a>
+                                    </h4>
+                                    <p class="card-text">
+                                        <h6>Diciembre - 20 días</h6>
+                                        "Hotel + Desayuno + Excursión"
+                                    </p>
+                                    <hr>
+                                    <p>A partir de <b>$64.300</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card cardborder contenedor">
+                                <img src="../../DeLio-Griselda/tp1/img/Filipinas.jpg" class="card-img-top" alt="...">
+                                <div class="promo text-right">
+                                    <button type="button"
+                                        class="btn text-light bg-warning animate__animated animate__flash animate__infinite"><b>¡Destacado!</b></button>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="servicio.html">Filipinas</a></h4>
+                                    <p class="card-text">
+                                        <h6>Septiembre - 10 noches</h6>
+                                        "Vuelos + Hotel + Desayuno + Traslados + Excursión"
+                                    </p>
+                                    <hr>
+                                    <p>A partir de <b>$123.500 </b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-right text-light"> Si no encuentras lo que buscas <a class="link"
+                            href="#">Contactanos </a></p>
+                    <div class="text-center">
+                        <i class="fa fa-chevron-circle-down fa-3x icon mb-3" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </section>
+            <!--Cards Blog-->
+            <section class="bg-light">
+                <div class="container">
+                    <div class="text-center">
+                        <br>
+                        <h3 class="mt-3 mb-3">Visita Nuestro Blog</h3>
+                        <p class="font-italic mb-5">No te pierdas todo lo que tenes que saber sobre tu proximo destino,
+                            platos típicos, playas paradisiacas, cultura, puntos de interés y todo lo necesario para
+                            hacer de tu próximo viaje un sueño inolvidable.</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 cardblog">
+                        <div class="col mb-5">
+                            <div class="card cardborder">
+                                <img src="../../DeLio-Griselda/tp1/img/africa blog.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href=""> 5 Playas de Africa que debes conocer.</a></h5>
+                                    <p class="card-text">¿Quieres visitar África pero no te apetece un safari
+                                        fotográfico?
+                                        ¡Perfecto! Esta es la lista de islas africanas paradisiacas que hemos preparado
+                                        en
+                                        Jordan´s. Cualquiera de ellas es un destino perfecto para relajarse en un
+                                        entorno
+                                        idílico que no olvidarás.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card cardborder">
+                                <img src="../../DeLio-Griselda/tp1/img/Tokio blog.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href=""> Tokio, Descubra Japón</a></h5>
+                                    <p class="card-text">Este país cuenta con una gran riqueza histórica y cultural.
+                                        Considerado el país del sol naciente, no solo permite descubrir tradicionales
+                                        milenarias, sino también su gastronomía particular y la personalidad de su
+                                        gente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card cardborder">
+                                <img src="../../DeLio-Griselda/tp1/img/playas-de-Sri-Lanka-930x360.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Las mejores playas de Sri Lanka</a></h5>
+                                    <p class="card-text">Ya sea porque eres un apasionado de los deportes acuáticos o
+                                        porque
+                                        necesitas relajarte, este artículo es perfecto para ti. Te presentamos las
+                                        mejores
+                                        playas de Sri Lanka. Lugares llenos de magia, con aguas transparentes, arena
+                                        fina,
+                                        resorts de lujo y hasta espacios prácticamente vírgenes en los que perderte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Footer-->
+            <footer id="Contacto">
+                <section class="container-fluid bg-dark sector1">
+                    <div class="jordan"> <a class="logofoot" href="#">Jordan´s</a>
+                        <p class="titlefoot">Travel Agency</p>
+                    </div>
+                    <div class="enlaces">
+                        <p class="txt">Enlaces de Interés</p>
+                        <a class="linkfoot linkline" href="#">Blog</a>
+                        <a class="linkfoot" href="#">Información</a>
+                        <a class="linkfoot" href="#">Nosotros</a>
+                        <a class="linkfoot" href="#">Prguntas Frecuentes</a>
+                    </div>
+                    <div class="sucursal">
+                        <p class="txt">Sucursal</p>
+                        <p class="text linkline">Florida 850, CABA</p>
+                        <p class="text">Phone: (011) 2363-3611 </p>
+                    </div>
+                    <div class="suscrib">
+                        <p class="txt2">Suscribite a Nuestro Newsleter</p>
+                        <div class="col-6 input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col-6 input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Mail" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <button type="submit" class="btn btn-success mt-2 enviar">Enviar</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="sector2">
+                        <p class="txt1"> <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp; copyright 2020 De Lio
+                            Griselda - All right
+                            reserved
+                        </p>
+                    </div>
+                </section>
+            </footer>
+        </article>
+    </main>
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--Scrolled-->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

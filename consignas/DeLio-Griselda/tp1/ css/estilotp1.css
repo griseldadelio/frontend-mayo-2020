@@ -1,0 +1,395 @@
+/*body*/
+/*parallax*/
+.box1{
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../img/puente.jpg);
+    display: table;
+}
+.box2{
+    height: 70vh;
+    width: 100%;
+    background-image: url(../img/iceland-2608985_640.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box3{
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../img/etretat-1292799_1920.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+.somos{
+    color: #ffffff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.big{
+    font-size: 80px;
+}
+.big1{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+/*navbar y carousel*/
+.carousel-item {
+    height: 520Px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover
+}
+#mainNavbar {
+    padding-left: 50px;
+    z-index: 1200;
+}
+.logo{
+    width: 15%;
+    border: #1B1C1B solid 1px; 
+}
+img{
+    height: 100%;
+}
+.navbar.scrolled {
+    background:#eeeeee;
+    transition:background 500ms;
+}
+
+/*Destinos*/
+
+.Iam {
+    padding: 1em 5em;
+    font: normal 40px/50px Montserrat, sans-serif;
+    color: #999;
+  }
+  .Iam p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .Iam b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+  }
+  .Iam .innerIam {
+    display: inline-block;
+    color: #0CCB6C;
+    position: relative;
+    white-space: nowrap;
+    animation:move 4s;  
+    animation-iteration-count:infinite; 
+  }
+  @keyframes move{
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+  }
+  
+  /*Cards paquetes*/
+  /*color icono*/
+  .icon{
+      color:#0CCB6C ;
+  }
+  .promo{
+      margin-top: -50px;
+      padding-right: 5px;   
+  }
+ .animate__animated{
+     animation-duration: infinite !important;
+ }
+/*cards blog*/
+.cardborder{
+    border: solid 1px;
+    border-radius: 20px !important;
+    display: block;
+    overflow: hidden !important;
+}
+.contenedor{
+    overflow: hidden;
+}
+.contenedor:hover{
+    transform:scale(1.1)
+}
+/*footer*/
+/*primercolumna*/
+.sector1{
+    height: 280px;    
+}
+.jordan {
+    height: 280px;
+    position: relative;
+    left: 8%;
+    top: 30px
+}
+.logofoot {
+    font-size: 35px;
+    color: #ffffff;
+}
+.logofoot:hover{
+    color: #ffffff;
+}
+
+.titlefoot {
+    color: #aaa7a7;
+    position: relative;
+    top: 0px;
+    font-size: 14.1px
+}
+/*columna2*/
+.enlaces{
+    height: 280px;
+    position: relative;
+    top: -235px;
+    left: 25%
+}
+.txt {
+    color: white;
+    font-size: 20px
+}
+.linkfoot{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent; 
+    position: relative;
+    top: -10px
+}
+.linkline{
+    border-top: 2px solid white;
+}
+.sucursal {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -515px;
+    left: 42%
+}
+
+.text {
+    color: #aaa7a7;
+    font-size: 15px;
+    margin-top: -10px
+}
+
+.link1 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    margin-top: 7px
+}
+/*suscribir*/
+.txt2{
+    color: #0CCB6C;
+}
+.suscrib {
+    width: 50%;
+    height: 280px;
+    position: relative;
+    top: -795px;
+    left: 65%;
+    font-size:20px;
+}
+.enviar{
+    margin-left: 18px;
+}
+/*footer negro*/
+.txt1 {
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 8%;
+    width: 60%;
+    color: #aaa7a7
+}
+
+.sector2 {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;   
+}
+
+/*2 pagina paquetes*/
+.filipinas{
+        color: #1B1C1B;
+        text-align: center;
+        padding-top: 300px;
+        font-size: 70px;
+        text-shadow: #eeeeee 2px 3px;
+        font-style: italic bold;
+        font-family:sans-serif;
+        margin-left: 20px;
+        
+}
+
+/*carousel testimonial*/
+.bgtestimonial{
+    background-image: url(../img/papua.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel .item {
+    font-size: 15px;
+    overflow: hidden;
+    min-height: 340px;
+    text-align: center;
+}
+
+.carousel .img-box {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto;
+    border-radius: 50%
+}
+
+.carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%
+}
+.carousel .overview {
+    text-align: center;
+    padding-bottom: 5px
+}
+        
+.carousel .overview b {
+    color:blue;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 5px
+}
+
+.txt-box {
+    width: 350px;
+    height: 180px;
+    padding: 20px;
+    margin: 0 auto;
+    padding-right: 40px;
+}
+/*3 pagina*/
+/*formulario reserva*/
+label {
+    display: inline-flex;
+    width: 100px;
+    margin: 20px 50px;
+ }
+ input, select {
+    background-color: #e5e5e5;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;     
+    width: 400px; 
+    margin: 25px 0px; 
+}
+/*diseño de los inputs*/
+.ajuste1{
+        width: 195px;
+        margin: 5px;
+        display: flex;
+       
+}
+.dispflex{
+    display:inline-flex
+}
+/*Referencia en inputs*/
+
+h5 {
+    margin: 0px 0px 0px 10px;
+    color: #9c9c9b;
+    font-weight: normal;
+}
+/*Validacion del mail*/
+input[type="email"]:invalid {
+    background-color: #FAEF81;
+ } 
+
+/*mediasqueris*/
+@media only screen and (max-width:1000px) {
+    .jordan {
+        width: 25%
+    }
+    .linkfoot {
+        font-size: 30px
+    }  
+    }
+   
+@media only screen and (max-width:850px) { 
+    /*serch*/
+    .btn{
+        display: grid;
+
+    }
+   .suscrib{
+       display: none;
+   }
+    .Iam {
+        padding: 1em;
+        font-size: 15px;
+        }
+ 
+    .jordan{
+        left: 3%;
+    }
+    .enlaces {
+        top: -255px;
+        left: 32%;
+        width: 25%; 
+        font-size: 10px;  
+    }
+    .txt{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 13px;
+    }
+    .txt1{
+        font-size: 7px;
+    }
+    .logofoot {
+        font-size: 15px
+    }
+    .linkfoot {
+        width: 60px;
+        font-size:15px; 
+        height: 30px; 
+    }
+    .sucursal {
+        position: relative;
+        top: -535px;
+        left: 70%;
+        width: 25%;
+    }
+    .sector1 {
+        height: 250px
+    }
+    .carousel-indicators{
+        margin-bottom: 30%;
+    }
+    .promo{
+    display: none;
+    }
+}
+
