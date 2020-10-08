@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--
+    // precio de lista de proveedor
+                producto        precio               
+                vino_x_unidad = 100 
+                azucar_x_kg = 60
+                cafe_x_kg = 230
+                leche_x_unidad = 45
+                pan_lactal_x_unidad = 95
+                queso_x_kg  = 120
+                paleta_x_kg  = 150 
+ ej : [[producto,precio],[producto,precio]]
+    1) armar un array con todos los productos y sus precios //
+    2) armar una lista de precios de venta con el 40% de ganancia  //
+    3) armar una lista de venta  con los precios con iva (21%) para consumidor final //
+    4) tener un boton que simule cargar de productos de proveedor(esto es para procesar la lista de precios) //
+    5) el boton de carga luego de ejecutarse debera mostrar un cartel/o texto en pantalla que afirme la carga//
+    6) mostrar lista de precios con iva en pantalla y permitir que se seleccionen productos individualmente con un boton de carrito //
+    7) guardar la lista de productos seleccionados  en un array
+    8) tener una lista visible de productos seleccionados en tiempo real .(es decir cada vez que apreto un carrito actualizar esta lista)
+    9) calcular precio de total y mostrar precio en pantalla 
+    -->
+</head>
+
+<body>
+    <div class="input-group input-group-lg container mt-4">
+        <div class="input-group-prepend">
+            <button onclick="mostrar_productos();" class="input-group-text text-primary"
+                id="inputGroup-sizing-lg">Ingresar Producto</button>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+    <div class="mt-4 container" id="productos"></div>
+</body>
+<script>
+    listaProveedor = [['vino_x_unidad', 100], ['azucar_x_kg', 60], ['cafe_x_kg', 230], ['leche_x_unidad', 45], ['pan_lactal_x_unidad', 95], ['queso_x_kg', 120], [' paleta_x_kg', 150]];
+    carrito = [];
+
+    var precio_ganancia = listaProveedor.map(function (x) {
+        var precioMasGanancia = (x[1] * 0.40) + x[1];
+        return [x[0], precioMasGanancia];
+    });
+
+    var precio_iva = precio_ganancia.map(function (x) {
+        var precioMasIva = (x[1] * 0.21) + x[1];
+        return [x[0], precioMasIva];
+    });
+
+    function mostrar_productos() {
+        var lista = "";
+        lista = '<table class="table"><thead><tr><th scope="col">Producto</th><th scope="col">Precio</th><th scope="col">Comprar</th></tr></thead>';
+        precio_iva.forEach(element => {
+            lista = lista + "<tr><td>" + element[0] + "</td><td>" + element[1] + "</td><td><button onclick='agregar(" + element + ")'> + </button></td></tr>";
+        });
+        document.getElementById('productos').innerHTML = lista;
+        alert('Carga de productos de proveedor realizada con éxito!');
+
+    }
+
+    carrito = [];
+    productos_seleccionados = [];
+    function agregar(element) {
+        console.log(element);
+        compra = [element];
+        productos_seleccionados.push(compra);
+        console.log(productos_seleccionados)
+
+    }
+
+
+</script>
+
+</html>
