@@ -1,0 +1,38 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "Ada IT",
+            "article": " Mi article..."
+        },
+        {
+            "id": 2,
+            "title": "cursoAda",
+            "author": "Ada IT",
+            "article": " Mi article..."
+        },
+        {
+            "id": 3,
+            "title": "cursoJs",
+            "author": "Ada IT",
+            "article": " Mi article..."
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "message": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "id": 1,
+        "author": "Ada IT"
+    },
+    "usuarios": {
+        "id": 1,
+        "name": "Griselda",
+        "last name": "De Lio"
+    }
+}
